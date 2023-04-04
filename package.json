@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/chrisbridges/quotes-api#readme",
   "dependencies": {
-    "apollo-server": "^3.12.0"
+    "apollo-server": "^3.12.0",
+    "graphql": "^16.6.0"
   }
 }
