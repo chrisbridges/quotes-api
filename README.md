@@ -1,0 +1,1 @@
+Basic GraphQL service that returns a random quote
