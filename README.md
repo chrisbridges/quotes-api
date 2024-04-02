@@ -1,1 +1,1 @@
-Basic GraphQL service that returns a random quote
+GraphQL API that returns quotes of wisdom I've collected over the years
