@@ -12,6 +12,7 @@ const typeDefs = gql`
 
   type Query {
     randomQuote: Quote
+    allQuotes: [Quote]
   }
 `;
 
@@ -25,6 +26,7 @@ const resolvers = {
         author: quote.author ? quote.author : null,
       };
     },
+    allQuotes: () => quotes,
   },
 };
 
