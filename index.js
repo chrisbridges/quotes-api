@@ -6,18 +6,25 @@ const typeDefs = gql`
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
   type Quote {
-    quote: String
+    quote: String!
     author: String
   }
 
   type Query {
-    randomQuote: String
+    randomQuote: Quote
   }
 `;
 
 const resolvers = {
   Query: {
-    randomQuote: () => quotes[Math.floor(Math.random() * quotes.length)].quote,
+    randomQuote: () => {
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+      return {
+        quote: quote.quote,
+        author: quote.author ? quote.author : null,
+      };
+    },
   },
 };
 
