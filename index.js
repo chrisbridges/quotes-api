@@ -27,6 +27,7 @@ const resolvers = {
       };
     },
     allQuotes: () => quotes,
+    //TODO: add quote by author query, but relegate to DB
   },
 };
 
