@@ -20,7 +20,7 @@ const resolvers = {
   Query: {
     randomQuote: () => {
       const quote = quotes[Math.floor(Math.random() * quotes.length)];
-
+      // do i need to return this as an object, or can I simply return the quote found?
       return {
         quote: quote.quote,
         author: quote.author ? quote.author : null,
